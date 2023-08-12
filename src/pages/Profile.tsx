@@ -6,9 +6,9 @@ const Profile = () => {
                         <div className="w-full h-full bg-white rounded-[2vw] relative flex flex-col gap-[2vh]">
                                 <div className=''>
                                         <img src="/image/cover.png" alt="" className=' rounded-t-[2vw] w-full' />
-                                        <img src="/image/user.png" alt="" className='absolute w-[20vw] left-[5vw] top-[6vh]' />
+                                        <img src="/image/user.png" alt="" className='absolute w-[20vw] left-[5vw] top-[5vw]' />
                                 </div>
-                                <div className="py-[2vh] flex flex-row justify-between px-[4vw]">
+                                <div className="py-[2vh] flex flex-row justify-between px-[4vw] text-[3vw] md:text-[1.5vw]">
                                         <div className='flex flex-col gap-[1vh]'>
                                                 <p className='text-[#0094FF] font-medium'>First Name: <span className='text-black'>Harris</span></p>
                                                 <p className='text-[#0094FF] font-medium'>Last Name: <span className='text-black'>Steven</span></p>

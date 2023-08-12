@@ -10,8 +10,8 @@ const About = () => {
                         <div className='gap-[5vw] text-[2.2vw] md:text-[1.05vw]  px-[4vw] py-[4vh]  md:px-[7.5vw] md:py-[8vh]'>
                                 <p className='font-bold text-[#00192C] text-[3.5vw] md:text-[2.1vw] my-[.5vh] md:my-[1vh]'>About us</p>
                                 <p className='my-[1vh] md:my-[3vh] text-[#191919]  '>Introducing the Future of Trading: A.I. Empowered Second Opinions!</p>
-                                <div className='flex flex-col md:flex-row gap-[5vw] '>
-                                        <img src="/image/blur1.png" alt="" className='absolute top-0 right- 0 w-[20vw]'  />
+                                <div className='flex flex-col md:flex-row gap-[5vw]'>
+                                        <img src="/image/blur1.png" alt="" className='absolute top-0 right-0  w-[20vw]'  />
                                         <img src="/image/blur2.png" alt="" className='absolute top-[20vh]  left-0 w-[20vw]' />
                                         <div className='text-[2.2vw] md:text-[1.05vw] font-medium text-[rgba(0,0,0,0.6)] w-full  md:w-[50%]'>
                                                 <p className='my-[3vh] '>Step into the world of next-level trading with our cutting-edge Artificial Intelligence-driven platform. Get ready to revolutionize your trade plans and supercharge your success!</p>

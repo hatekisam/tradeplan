@@ -72,8 +72,8 @@ const Activity = () => {
                                                         </select>
                                                         <input type="text" placeholder='Search' className='bg-[#EAEAEA] outline-none rounded-md w-[40vw] px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]' />
                                                 </div>
-                                                <button onClick={() => setAddingTradePlan(true)} className='bg-[#0094FF] px-[2vw] py-[1vh] rounded-full h-fit text-white my-[1vh] flex flex-row gap-[0.5vw]'>
-                                                        <img src="/svg/add.svg" alt="" />
+                                                <button onClick={() => setAddingTradePlan(true)} className='bg-[#0094FF] px-[2vw] py-[1vh] rounded-full h-fit text-white my-[1vh] flex flex-row gap-[0.5vw] items-center'>
+                                                        <img src="/svg/add.svg" alt="" className='w-[1vw]' />
                                                         <p>Add Trade Plan</p>
                                                 </button>
                                         </div>
