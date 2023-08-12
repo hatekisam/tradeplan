@@ -42,7 +42,14 @@ function App() {
 						{modelOpen && (
 							<div className="absolute w-[100vw] h-[100vh] flex justify-center items-center left-0 top-0 z-40" >
 								<div className='w-[90vw] md:w-[50vw] lg:w-[45vw] border-gradient p-[2vw] rounded-[2vw] text-center '>
-									<p className='text-[#391800] font-semibold text-[3vw] md:text-[1.6vw] my-[2vh]'>Get feedback on your trade</p>
+									<div className="flex flex-row justify-between">
+										<div></div>
+										<p className='text-[#391800] font-semibold text-[3vw] md:text-[1.6vw] my-[2vh]'>Get feedback on your trade</p>
+										<button onClick={closeModel}>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className='w-[2.5vw]'>
+												<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" /></svg>
+										</button>
+									</div>
 									<div className='text-left my-[1vh]'>
 										<p className='text-[2.1vw] md:text-[0.8vw] text-[#676767]'>Asset</p>
 										<div className="flex flex-row gap-2">

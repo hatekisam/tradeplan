@@ -4,7 +4,6 @@ import { modelStore } from '../utils/store'
 
 const Activity = () => {
         const openModel = modelStore((state: any) => state.openModel)
-        const modelOpen = modelStore((state: any) => state.modelOpen)
         return (
                 <div className=' p-[1vw] h-[100vh]'>
                         <div className="w-full h-full bg-white rounded-[2vw] p-[2vw] overflow-y-auto">
@@ -19,7 +18,7 @@ const Activity = () => {
                                                         </select>
                                                         <input type="text" placeholder='Search' className='bg-[#EAEAEA] outline-none rounded-md w-[50vw] md:w-[40vw] px-[1vw] py-[.5vh] md:px-[2vw] md:py-[1vh] placeholder:text-[#636363] my-[1vh]' />
                                                 </div>
-                                                <button onClick={()=>{openModel();console.log(modelOpen)}} className='bg-[#0094FF] px-[1vw] py-[.5vh] md:px-[2vw] md:py-[1vh] rounded-full h-fit text-white my-[1vh] flex flex-row gap-[0.5vw] items-center '>
+                                                <button onClick={openModel} className='bg-[#0094FF] px-[1vw] py-[.5vh] md:px-[2vw] md:py-[1vh] rounded-full h-fit text-white my-[1vh] flex flex-row gap-[0.5vw] items-center '>
                                                         <img src="/svg/add.svg" alt="" className='w-[2vw] md:w-[1vw]' />
                                                         <p>Add Trade Plan</p>
                                                 </button>
