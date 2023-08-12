@@ -101,10 +101,9 @@ const History = () => {
                                         <div className="flex flex-row justify-between text-[2vw] md:text-[1.2vw]">
                                                 <div className="flex flex-row gap-[1vw]">
                                                         <select name="" id="" className='bg-[#EAEAEA] outline-none rounded-md w-fit px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]'>
-                                                                <option value="">USD</option>
-                                                                <option value="">USD</option>
-                                                                <option value="">USD</option>
-                                                                <option value="">USD</option>
+                                                                <option value="">Start Date</option>
+                                                                <option value="">End Date</option>
+                                                                <option value="">Result</option>
                                                         </select>
                                                         <input type="text" placeholder='Search' className='bg-[#EAEAEA] outline-none rounded-md w-[60vw] md:w-[40vw] px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]' />
                                                 </div>
@@ -114,7 +113,7 @@ const History = () => {
                                                 </button>
                                         </div>
                                         <div className='my-[1vh]'>
-                                                <table className="w-full rounded-lg text-[rgba(67,67,67,0.71)] text-[2.2vw] md:text-[.8vw]">
+                                                <table className= "w-fit overflow-x-scroll rounded-lg text-[rgba(67,67,67,0.71)] text-[2.2vw] md:text-[.8vw]">
                                                         <tr className="bg-[rgba(255,107,0,0.12)] text-[#FF6B00] py-10 rounded-md">
                                                                 <th className="p-2">Start Date</th>
                                                                 <th className="p-2">End Date</th>
