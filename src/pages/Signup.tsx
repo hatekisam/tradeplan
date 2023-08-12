@@ -3,18 +3,22 @@ import { Link } from 'react-router-dom'
 
 const Signup = () => {
         return (
-                <div className='w-full h-[100vh] overflow-hidden flex flex-row justify-between items-center px-[8vw] bg-[#F8FFFB]  gap-[5vw]'>
+                <div className='w-full h-[100vh] overflow-hidden flex  flex-col md:flex-row justify-center md:justify-between items-center px-[8vw] bg-[#F8FFFB]  gap-[5vw]'>
+                        <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
+                                <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
+                                <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
+                        </div>
                         <img src="/image/signup2.png" alt="" className='absolute left-0 top-[20vh] w-[20vw] ' />
-                        <div className="w-[50%] flex items-center justify-center z-10">
+                        <div className="hidden md:flex w-[50%]  items-center justify-center z-10 ">
                                 <img src="/image/signup.png" alt="" className='w-[30vw]' />
                         </div>
-                        <div className='w-[50%] bg-white rounded-[1.05vw] p-[2vw]'>
-                                <p className='my-[1vh] font-extrabold text-[2vw]'>Create Account</p>
-                                <p className='text-[1.2vw] font-semibold my-[1vh]'>Sign up with your email for registration</p>
+                        <div className='w-full md:w-[50%] bg-white rounded-[1.05vw] p-[2vw] z-30'>
+                                <p className='my-[1vh] font-extrabold text-[4vw] md:text-[2vw]'>Create Account</p>
+                                <p className='text-[2.4vw] md:text-[1.2vw] font-semibold my-[1vh]'>Sign up with your email for registration</p>
                                 <form className='mt-[2vh] text-[1.05vw] '>
-                                        <div className="flex flex-row justify-between gap-[1.5vw] my-[1vh]">
-                                                <div className=' w-[50%]'>
-                                                        <label htmlFor="name" className='font-medium text-[1.2vw] my-[0.5vw]'>Name</label>
+                                        <div className="flex flex-col sm:flex-row justify-between gap-[1.5vw] my-[1vh]">
+                                                <div className='w-fll sm:w-[50%]'>
+                                                        <label htmlFor="name" className='font-medium text-[2.4vw] md:text-[1.2vw] my-[0.5vw]'>Name</label>
                                                         <div className='w-full relative'>
                                                                 <input type="text" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Fist Name' />
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="29" viewBox="0 0 22 29" fill="none" className='absolute  left-[3.2%] top-[2vh]  w-[1.5vw]'>
@@ -23,7 +27,7 @@ const Signup = () => {
                                                         </div>
                                                 </div>
                                                 <div className=' w-[50%]'>
-                                                        <label htmlFor="email" className='font-medium text-[1.2vw] my-[0.5vw]'>Email</label>
+                                                        <label htmlFor="email" className='font-medium text-[2.4vw] md:text-[1.2vw] my-[0.5vw]'>Email</label>
                                                         <div className='w-full relative'>
                                                                 <input type="email" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Email' />
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none" className='absolute  left-[3.2%] top-[2vh]  w-[1.5vw]'>
@@ -34,7 +38,7 @@ const Signup = () => {
                                         </div>
                                         <div className="flex flex-row justify-between gap-[1.5vw] my-[1vh]">
                                                 <div className=' w-[50%]'>
-                                                        <label htmlFor="phone" className='font-medium text-[1.2vw] my-[0.5vw]'>Phone</label>
+                                                        <label htmlFor="phone" className='font-medium text-[2.4vw] md:text-[1.2vw] my-[0.5vw]'>Phone</label>
                                                         <div className='w-full relative'>
                                                                 <input type="text" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Phone' />
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" className='absolute  left-[3.2%] top-[2vh]  w-[1.5vw]'>
@@ -43,7 +47,7 @@ const Signup = () => {
                                                         </div>
                                                 </div>
                                                 <div className=' w-[50%]'>
-                                                        <label htmlFor="country" className='font-medium text-[1.2vw] my-[0.5vw]'>Country</label>
+                                                        <label htmlFor="country" className='font-medium text-[2.4vw] md:text-[1.2vw] my-[0.5vw]'>Country</label>
                                                         <div className='w-full relative'>
                                                                 <input type="text" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='City' />
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 22 27" fill="none" className='absolute  left-[3.2%] top-[2vh]  w-[1.5vw]'>
@@ -53,7 +57,7 @@ const Signup = () => {
                                                 </div>
                                         </div>
                                         <div className='my-[1vh]'>
-                                                <label htmlFor="email" className='font-medium text-[1.2vw] my-[0.5vw]'>Password</label>
+                                                <label htmlFor="email" className='font-medium text-[2.4vw] md:text-[1.2vw] my-[0.5vw]'>Password</label>
                                                 <div className='w-full relative'>
                                                         <input type="password" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Password' />
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" className='absolute  right-[2%] top-[2vh]  w-[1.5vw]'>

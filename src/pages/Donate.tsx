@@ -2,20 +2,18 @@ import React from 'react'
 
 const Donate = () => {
         return (
-                <div className='flex flex-row gap-[5vw] text-[1.05vw]  px-[7.5vw] py-[15vh]'>
-                        <img src="/image/blur1.png" alt="" className='absolute top-0 right-0' />
-                        <img src="/image/blur2.png" alt="" className='absolute top-[20vh]  left-0' />
-                        <div className='w-[55%]'>
-                                <p className='font-bold text-[#00192C] text-[2.1vw] my-[1vh]'>Donate to our company</p>
+                <div className='flex flex-col md:flex-row gap-[5vw] text-[2.2vw] md:text-[1.05vw]  px-[4vw] md:px-[7.5vw] py-[4vh] md:py-[15vh]'>
+                        <img src="/image/blur1.png" alt="" className='absolute top-0 right-0 w-[20vw]' />
+                        <img src="/image/blur2.png" alt="" className='absolute top-[20vh]  left-0 w-[20vw]' />
+                        <div className='w-full md:w-[55%]'>
+                                <p className='font-bold text-[#00192C] text-[4vw] md:text-[2.1vw] my-[1vh]'>Donate to our company</p>
                                 <p className='text-[#6C6C6C] my-[1vh]'>Welcome to TradePlans.AI, where innovation meets trading. Whether you're a seasoned trader or just starting, our platform is your ultimate companion on the path to financial success.</p>
                                 <p className='my-[2vh] text-[#0094FF] font-medium'>Watch how</p>
                                 <div className='relative'>
                                         <img src="/image/donate.png" alt="" />
-                                        {/* <img src="/image/playC.png" alt="" className='absolute top-[45%] left-[40%]' />
-                                        <img src="/image/playR.png" alt="" className='absolute top-[51%] left-[46%]' /> */}
                                 </div>
                         </div>
-                        <div className='w-[45%] border-gradient p-[2vw] rounded-[2vw] '>
+                        <div className='w-full md:w-[45%] border-gradient p-[2vw] rounded-[2vw] '>
                                 <p className='my-[1vh] font-extrabold text-[2vw]'>Payment</p>
                                 <div className="w-full h-[1px] bg-black"></div>
                                 <div>

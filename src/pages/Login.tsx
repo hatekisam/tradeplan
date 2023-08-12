@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 const Login = () => {
         return (
                 <div className='w-full h-[100vh] overflow-hidden flex flex-row justify-between bg-[#F8FFFB] px-[8vw] py-[10vh] gap-[5vw]'>
+                        <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
+                                <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
+                                <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
+                        </div>
                         <div className="w-[50%] flex items-center justify-center">
                                 <img src="/image/login.png" alt="" className='w-[30vw]' />
                         </div>
@@ -14,7 +18,7 @@ const Login = () => {
                                         <div className='my-[1.3vw]'>
                                                 <label htmlFor="email" className='font-medium text-[1.2vw] my-[0.5vw]'>Email</label>
                                                 <div className='w-full relative'>
-                                                        <input type="email" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Email'/>
+                                                        <input type="email" className='border-[2px] border-[rgba(0,0,0,0.4)] rounded-md w-full h-full px-[2.5vw] py-[2vh] pl-[2.2vw]' placeholder='Email' />
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none" className='absolute  left-[2%] top-[2vh]  w-[1.5vw]'>
                                                                 <path d="M1.16667 0H22.1667C22.4761 0 22.7728 0.122916 22.9916 0.341709C23.2104 0.560501 23.3333 0.857247 23.3333 1.16667V19.8333C23.3333 20.1428 23.2104 20.4395 22.9916 20.6583C22.7728 20.8771 22.4761 21 22.1667 21H1.16667C0.857247 21 0.560501 20.8771 0.341709 20.6583C0.122916 20.4395 0 20.1428 0 19.8333V1.16667C0 0.857247 0.122916 0.560501 0.341709 0.341709C0.560501 0.122916 0.857247 0 1.16667 0ZM21 4.94433L11.7507 13.2277L2.33333 4.91867V18.6667H21V4.94433ZM2.9295 2.33333L11.7378 10.1057L20.419 2.33333H2.9295Z" fill="black" fill-opacity="0.4" />
                                                         </svg>
@@ -33,7 +37,7 @@ const Login = () => {
                                                 </div>
                                                 <Link to={"/forgot-password"} className='font-bold'>Forgot password?</Link>
                                         </div>
-                                        <input type="submit" value="Log In" className='text-white bg-[#0094FF] w-full  px-[2.5vw] py-[2vh] rounded-md'/>
+                                        <input type="submit" value="Log In" className='text-white bg-[#0094FF] w-full  px-[2.5vw] py-[2vh] rounded-md' />
                                 </form>
                                 <div>
                                         <p className='font-medium text-[1.05vw] my-[2vh] text-center'>OR</p>

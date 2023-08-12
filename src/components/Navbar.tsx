@@ -8,7 +8,7 @@ const Navbar = () => {
                         <div className="flex flex-row px-[8vw] py-[2vh] justify-between text-[1.2vw] sm:text-[1.05vw] relative">
                                 {mobileNav && (
                                         <div className="block sm:hidden absolute bg-white w-[50vw] top-[105%] right-[1vw] rounded-md border-2 border-[#FF6B00] text-[1.8vw] py-[1vh] px-[1vw]">
-                                                <div className="flex sm:hidden flex-col gap-[1vh] items-center text-[#939393]">
+                                                <div className="flex sm:hidden flex-col gap-[1vh] items-center text-[#939393]" onClick={()=>setMobileNav(false)}>
                                                         <Link to={"/"}>Home</Link>
                                                         <Link to={"/feedback"}>Feedback</Link>
                                                         <Link to={"/about"}>About Us</Link>

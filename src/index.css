@@ -11,7 +11,7 @@
 .border-gradient {
   position: relative;
   background: #fff;
-  border-radius: 40px;
+  border-radius: 2vw;
 }
 
 .border-gradient::after {
