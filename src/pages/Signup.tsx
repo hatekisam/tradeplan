@@ -66,7 +66,7 @@ const Signup = () => {
                                         </div>
                                         <input type="submit" value="Sign Up" className='text-white bg-[#FF6B00] w-full  px-[2.5vw] py-[2vh] rounded-md my-[2vh]' />
                                 </form>
-                                <p className='my-[2vh] text-[1.05vw] text-center'>Already have an account,<Link className='font-bold text-[#FF6B00]' to={"/"}>Login</Link></p>
+                                <p className='my-[2vh] text-[1.05vw] text-center'>Already have an account,<Link className='font-bold text-[#FF6B00]' to={"/login"}>Login</Link></p>
                         </div>
                 </div>
         )

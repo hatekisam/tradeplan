@@ -1,8 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
         return (
                 <div>
+                        <Helmet>
+                                <title>Trade Plan | About</title>
+                        </Helmet>
                         <div className='gap-[5vw] text-[1.05vw]  px-[7.5vw] py-[8vh]'>
                                 <p className='font-bold text-[#00192C] text-[2.1vw] my-[1vh]'>About us</p>
                                 <p className='my-[3vh] text-[#191919] text-[1.05vw] '>Introducing the Future of Trading: A.I. Empowered Second Opinions!</p>
