@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 const Login = () => {
         return (
                 <div className='w-full h-[100vh] overflow-hidden flex flex-col md:flex-row justify-center md:justify-between items-center bg-[#F8FFFB] px-[8vw] py-[10vh] gap-[5vw]'>
-                        <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
-                                <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
-                                <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
-                        </div>
+                        <Link to={"/"}>
+                                <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
+                                        <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
+                                        <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
+                                </div>
+                        </Link>
                         <div className="hidden md:flex w-[50%]  items-center justify-center z-10 ">
                                 <img src="/image/login.png" alt="" className='w-[30vw]' />
                         </div>
@@ -42,7 +44,7 @@ const Login = () => {
                                 <div>
                                         <p className='font-medium text-[2.2vw] md:text-[1.05vw] my-[2vh] text-center'>OR</p>
                                         <button className=" text-[2.2vw] md:text-[1.05vw] flex flex-row gap-1 items-center justify-center  w-full  px-[1vw] md:px-[2vw] py-[1vh] rounded-md border-[2px] border-[rgba(0,0,0,0.4)]">
-                                                <img src="/image/google.png" alt="Google" className='w-[4vw] md:w-[1.8vw]'/>
+                                                <img src="/image/google.png" alt="Google" className='w-[4vw] md:w-[1.8vw]' />
                                                 <p>Continue with Google </p>
                                         </button>
                                 </div>

@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FileInput from './FileInput'
 
 const HomeIntro = () => {
+        const [selectedImage, setSelectedImage] = useState<File | null>(null)
         return (
                 <div className='flex flex-col md:flex-row gap-[5vw] text-[2vw] md:text-[1.05vw]  px-[5vw] py-[4vh] sm:px-[7.5vw] sm:py-[8vh]'>
                         <img src="/image/blur1.png" alt="" className='absolute top-0 right-0 w-[20vw]' />
@@ -12,9 +14,9 @@ const HomeIntro = () => {
                                         <div className='w-[40%] sm:w-[30%] '>
                                                 <button className='bg-[#FF6B00] px-[1vw] py-[.5vh] sm:px-[2vw] sm:py-[1vh] rounded-full text-white my-[1vh]'>Get Started</button>
                                                 <p className='my-[8vh] text-[#0094FF] font-medium'>Watch how</p>
-                                        </div>  
+                                        </div>
                                         <div className='relative  w-[60%] flex items-center justify-center'>
-                                                <img src="/image/homeintro.png" alt=""  className='w-[80%]'/>
+                                                <img src="/image/homeintro.png" alt="" className='w-[80%]' />
                                                 <img src="/image/playC.png" alt="" className='absolute top-[44%] md:top-[45%] left-[44%] w-[5vw] md:w-[3vw]' />
                                                 <img src="/image/playR.png" alt="" className='absolute top-[47%] md:top-[50%] left-[47%] w-[2vw] md:w-[1vw]' />
                                         </div>
@@ -66,7 +68,8 @@ const HomeIntro = () => {
                                                 </div>
                                                 <div>
                                                         <p className='text-[1.8vw] md:text-[0.8vw] text-[#676767]'>Plan Image</p>
-                                                        <input type="file" name="" id="" className='text-[1.8vw] md:text-[0.8vw] text-[#676767] bg-[#EAEAEA] rounded-md w-full px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]' />
+                                                        {/* <input type="file" name="" id="" className='text-[1.8vw] md:text-[0.8vw] text-[#676767] bg-[#EAEAEA] rounded-md w-full px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]  file:bg-[rgba(0,148,255,0.06)] file:text-[#0094FF] file:border-none file:rounded-md' /> */}
+                                                        <FileInput selectedFile={selectedImage} setSelectedFile={setSelectedImage} />
                                                 </div>
                                                 <input type="submit" value="Submit" className='bg-[#0094FF] px-[2vw] py-[1vh] rounded-full w-full  h-fit text-white my-[1vh]' />
                                         </div>

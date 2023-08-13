@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
         return (
                 <div className='w-full h-[100vh] overflow-hidden flex  flex-col md:flex-row justify-center md:justify-between items-center px-[8vw] bg-[#F8FFFB]  gap-[5vw]'>
-                        <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
-                                <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
-                                <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
-                        </div>
+                        <Link to={"/"}>
+                                <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
+                                        <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />
+                                        <p className='text-[#FF6B00]  text-[3vw] sm:text-[1.05vw]'>TradePlans<span className='text-[#0094FF]'>.AI</span></p>
+                                </div>
+                        </Link>
                         <img src="/image/signup2.png" alt="" className='absolute left-0 top-[20vh] w-[20vw] ' />
                         <div className="hidden md:flex w-[50%]  items-center justify-center z-10 ">
                                 <img src="/image/signup.png" alt="" className='w-[30vw]' />

@@ -5,9 +5,9 @@ const Navbar = () => {
         const [mobileNav, setMobileNav] = useState(false)
         return (
                 <div className='fixed top-0 left-0 w-full border-[#0094FF] border-b z-50 bg-white'>
-                        <div className="flex flex-row px-[8vw] py-[2vh] justify-between text-[1.2vw] sm:text-[1.05vw] relative">
+                        <div className="flex flex-row px-[8vw] py-[2vh] justify-between text-[1.2vw] sm:text-[1.5vw]  lg:text-[1.02vw]  relative">
                                 {mobileNav && (
-                                        <div className="block sm:hidden absolute bg-white w-[50vw] top-[105%] right-[1vw] rounded-md border-2 border-[#FF6B00] text-[1.8vw] py-[1vh] px-[1vw]">
+                                        <div className="block sm:hidden absolute bg-white w-[50vw] top-[105%] right-[1vw] rounded-md border-2 border-[#FF6B00] text-[2.5vw] py-[1vh] px-[1vw]">
                                                 <div className="flex sm:hidden flex-col gap-[1vh] items-center text-[#939393]" onClick={()=>setMobileNav(false)}>
                                                         <Link to={"/"}>Home</Link>
                                                         <Link to={"/feedback"}>Feedback</Link>
