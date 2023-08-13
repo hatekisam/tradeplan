@@ -1,8 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Profile = () => {
         return (
                 <div className='p-[1vw] h-[100vh]'>
+                        <Helmet>
+                                <title>TradePlan | Profile</title>
+                        </Helmet>
                         <div className="w-full h-full bg-white rounded-[2vw] relative flex flex-col gap-[2vh]">
                                 <div className=''>
                                         <img src="/image/cover.png" alt="" className=' rounded-t-[2vw] w-full' />

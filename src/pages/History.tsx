@@ -1,6 +1,7 @@
 import React from 'react'
 import image from "../assets/planImage.png"
 import { modelStore } from '../utils/store'
+import { Helmet } from 'react-helmet'
 const History = () => {
         const openModel = modelStore((state: any) => state.openModel)
         const tradePlans = [
@@ -97,6 +98,9 @@ const History = () => {
         ]
         return (
                 <div className='p-[1vw] h-[100vh]'>
+                        <Helmet>
+                                <title>TradePlan | History</title>
+                        </Helmet>
                         <div className="w-full h-full bg-white rounded-[2vw] p-[2vw] overflow-y-auto">
                                 <div>
                                         <p className='mt-[5.2vw] sm:mt-[0.5vh] text-[2.2vw] md:text-[.8vw] text-[#676767] font-medium my-[0.5vh]'>Sort By</p>
@@ -166,11 +170,11 @@ const History = () => {
                                                                                                 <p className={trade.result === "waiting" ? "text-[#E6CA00] rounded-md bg-[rgba(255,232,64,0.21)] px-[1vw] py-[.7vh] " : "bg-[rgba(36,255,0,0.08)] rounded-md text-[#0EAB00] px-[1vw] py-[.7vh] "}>{trade.result}</p>
                                                                                         </td>
                                                                                         <td className="p-2 ">
-                                                                                                <div className='bg-[rgba(225,0,0,0.06)] p-[.5vw] rounded-md flex items-center justify-center'>
+                                                                                                <button className='bg-[rgba(225,0,0,0.06)] p-[.5vw] rounded-md flex items-center justify-center'>
                                                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" className='w-[2vw] md:w-[1.2vw]'>
                                                                                                                 <path d="M15.5 4H20.5V6H18.5V19C18.5 19.5523 18.0523 20 17.5 20H3.5C2.94772 20 2.5 19.5523 2.5 19V6H0.5V4H5.5V1C5.5 0.44772 5.94772 0 6.5 0H14.5C15.0523 0 15.5 0.44772 15.5 1V4ZM16.5 6H4.5V18H16.5V6ZM7.5 9H9.5V15H7.5V9ZM11.5 9H13.5V15H11.5V9ZM7.5 2V4H13.5V2H7.5Z" fill="#E10000" />
                                                                                                         </svg>
-                                                                                                </div>
+                                                                                                </button>
                                                                                         </td>
                                                                                 </tr>
                                                                         ))}

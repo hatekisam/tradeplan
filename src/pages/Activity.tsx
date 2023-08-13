@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import image from "../assets/planImage.png"
 import { modelStore } from '../utils/store'
+import { Helmet } from 'react-helmet'
 
 const Activity = () => {
         const openModel = modelStore((state: any) => state.openModel)
         return (
                 <div className=' p-[1vw] h-[100vh]'>
+                        <Helmet>
+                                <title>TradePlan | Activity</title>
+                        </Helmet>
                         <div className="w-full h-full bg-white rounded-[2vw] p-[2vw] overflow-y-auto">
                                 <div>
                                         <p className='mt-[5.2vw] sm:mt-[0.5vh] text-[2.2vw] md:text-[.8vw] text-[#676767] font-medium my-[0.5vh]'>Sort By</p>

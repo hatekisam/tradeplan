@@ -8,6 +8,10 @@
   border-radius: 40px;
 } */
 
+*{
+  font-family: 'Poppins',sans-serif;
+}
+
 .border-gradient {
   position: relative;
   background: #fff;

@@ -5,6 +5,7 @@ import { modelStore } from '../utils/store'
 const Model = () => {
         const closeModel = modelStore((state: any) => state.closeModel)
         const [selectedImage, setSelectedImage] = useState<File | null>(null)
+        const [selectedButtonForm,setSelectedButtonForm]=useState("Stock")
         return (
                 <div className="absolute w-[100vw] h-[100vh] flex justify-center items-center left-0 top-0 z-40" >
                         <div className='w-[90vw] md:w-[50vw] lg:w-[45vw] border-gradient p-[2vw] rounded-[2vw] text-center '>
@@ -19,9 +20,9 @@ const Model = () => {
                                 <div className='text-left my-[1vh]'>
                                         <p className='text-[2.1vw] md:text-[0.8vw] text-[#676767]'>Asset</p>
                                         <div className="flex flex-row gap-2">
-                                                <button className='bg-[#FF6B00] text-white px-2 py-1 rounded-md'>Stock</button>
-                                                <button className='bg-[rgba(255,107,0,0.06)] text-[#FF6B00] px-2 py-1 rounded-md'>Forex</button>
-                                                <button className='bg-[rgba(255,107,0,0.06)] text-[#FF6B00] px-2 py-1 rounded-md'>Crypto</button>
+                                                <button className={selectedButtonForm === "Stock" ? 'bg-[#FF6B00] text-white px-2 py-1 rounded-md' : 'bg-[rgba(255,107,0,0.06)] text-[#FF6B00] px-2 py-1 rounded-md'} onClick={() => setSelectedButtonForm("Stock")}>Stock</button>
+                                                <button className={selectedButtonForm === "Forex" ? 'bg-[#FF6B00] text-white px-2 py-1 rounded-md' : 'bg-[rgba(255,107,0,0.06)] text-[#FF6B00] px-2 py-1 rounded-md'} onClick={() => setSelectedButtonForm("Forex")}>Forex</button>
+                                                <button className={selectedButtonForm === "Crypto" ? 'bg-[#FF6B00] text-white px-2 py-1 rounded-md' : 'bg-[rgba(255,107,0,0.06)] text-[#FF6B00] px-2 py-1 rounded-md'} onClick={() => setSelectedButtonForm("Crypto")}>Crypto</button>
                                         </div>
                                         <input type="text" placeholder='USD' className='outline-none bg-[#EAEAEA] rounded-md w-full px-[1vw] py-[1vh] placeholder:text-[#636363] my-[1vh]' />
                                         <div className="flex flex-row gap-2 my-[1vh]">
