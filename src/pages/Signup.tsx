@@ -1,9 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 const Signup = () => {
         return (
                 <div className='w-full h-[100vh] overflow-hidden flex  flex-col md:flex-row justify-center md:justify-between items-center px-[8vw] bg-[#F8FFFB]  gap-[5vw]'>
+                        <Helmet>
+                                <title>Signup</title>
+                        </Helmet>
                         <Link to={"/"}>
                                 <div className="absolute top-[5vh] left-[5vw] flex flex-row gap-2 items-center">
                                         <img src="/svg/logo.svg" alt="" className='w-[5vw] sm:w-[2.6vw]' />

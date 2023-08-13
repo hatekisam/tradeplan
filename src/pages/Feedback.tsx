@@ -1,5 +1,6 @@
-import  Rating  from '@mui/material/Rating'
-import React, { useState } from 'react'
+import { Pagination } from '@mui/material'
+import Rating from '@mui/material/Rating'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 
 const Feedback = () => {
@@ -36,49 +37,55 @@ const Feedback = () => {
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will John Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 }, {
                         image: "/image/steven.png",
-                        name: "Will Smith",
+                        name: "Will Janet Smith",
                         body: `Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
 
                         Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results. `
                 },
         ]
-        const [newRating,setNewRating] = useState(0)
+        const [newRating, setNewRating] = useState(0)
+        const [page, setPage] = useState(1)
+        const numOfPages = Math.ceil(feedback.length / 5);
+        const [shownFeeds,setShownFeeds]= useState(feedback.slice(0,4))
+        useEffect(()=>{
+                setShownFeeds(feedback.slice(page*5-1-4,page*5-1))
+        },[page])
         return (
                 <div>
                         <Helmet>
@@ -102,7 +109,7 @@ const Feedback = () => {
                                                                         name="simple-controlled"
                                                                         value={newRating}
                                                                         onChange={(event, newValue) => {
-                                                                                setNewRating((prev)=>newValue ? newValue : prev);
+                                                                                setNewRating((prev) => newValue ? newValue : prev);
                                                                         }}
                                                                 />
                                                                 <div>
@@ -124,7 +131,7 @@ const Feedback = () => {
                                 </div>
                                 <p className='my-[2vh] md:my-[5vh] text-[2.5vw] md:text-[1.6vw] font-semibold'>Other Feedbacks</p>
                                 <div>
-                                        {feedback.map((feedback, index) => {
+                                        {shownFeeds.map((feedback, index) => {
                                                 return (
                                                         <div key={index} className='border-gradient rounded-[2vw] my-[2vh] md:my-[5vh] p-[1.5vw]'>
                                                                 <div className="flex flex-row gap-2 w-[50%] my-[2vh] z-20">
@@ -154,9 +161,9 @@ const Feedback = () => {
                                                         </div>
                                                 )
                                         })}
-                                        <button className='flex items-center justify-center w-full'>
-                                                <p className='text-center text-[2vw] md:text-[1.05vw] text-[#0094FF]'>Read more</p>
-                                        </button>
+                                </div>
+                                <div className="flex items-center justify-center">
+                                        <Pagination count={numOfPages}  page={page} onChange={(e,value)=>setPage(value)}/>
                                 </div>
                         </div>
                 </div>
