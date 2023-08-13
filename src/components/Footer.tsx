@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ShowMoreText from "react-show-more-text"
 
 const Footer = () => {
         return (
@@ -18,7 +19,20 @@ const Footer = () => {
                         </div>
                         <div className='w-[30%]'>
                                 <p className='font-bold text-[#00192C]'>&copy; {new Date().getFullYear()} Created by TradePlans.ai</p>
-                                <p className='text-[#474747] font-medium text-[1.2vw] md:text-[0.8vw]'>Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.</p>
+                                <ShowMoreText
+                                        /* Default options */
+                                        lines={3}
+                                        more="Show more"
+                                        less="Show less"
+                                        className="text-[#474747] font-medium text-[1.2vw] md:text-[0.8vw]"
+                                        anchorClass="show-more-less-clickable"
+                                        // onClick={this.executeOnClick}
+                                        expanded={false}
+                                        width={280}
+                                        truncatedEndingComponent={"... "}
+                                >
+                                        Risk Warning: This tool and its content should not be construed as financial advice. Signals and readings displayed by the tool are our opinions only and are meant only to be educational. By viewing this tool, you agree that TradePlans.ai is not liable for any gains or losses you may incur from the financial decisions you make. Data displayed is not guaranteed to be 100% accurate or real-time, and may be subject to latency or errors. Please consult a licensed financial advisor prior to making any investment decisions. Trading is not appropriate for everyone. Past performance is not indicative of future results.
+                                </ShowMoreText>
                         </div>
                 </div>
         )
